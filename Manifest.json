@@ -3,22 +3,26 @@
   {
     "name" : "flat",
 
-    "summary" : "Custom Application",
-    "description" : "This is a skeleton for a custom application with qooxdoo.",
+    "summary" : "Flat UI theme",
+    "description" : "A standard theme for qooxdoo based on flat ui.",
     
-    "homepage" : "http://some.homepage.url/",
+    "homepage" : "http://gonicus.de/",
 
-    "license" : "SomeLicense",
+    "license" : "MIT",
     "authors" : 
     [
       {
-        "name" : "First Author (uid)",
-        "email" : "first.author@some.domain"
+        "name" : "Cajus Pollmeier",
+        "email" : "pollmeier@gonicus.de"
+      },
+      {
+        "name" : "Markus Bader",
+        "email" : "bader@gonicus.de"
       }
     ],
 
     "version" : "master",
-    "qooxdoo-versions": ["6.0.0-alpha"]
+    "qooxdoo-versions": ["5.0.2"]
   },
   
   "provides" : 
@@ -27,8 +31,7 @@
     "encoding"    : "utf-8",
     "class"       : "source/class",
     "resource"    : "source/resource",
-    "translation" : "source/translation",
-    "type"        : "application"
+    "type"        : "library"
   }
 }
 

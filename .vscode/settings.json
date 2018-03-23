@@ -1,0 +1,6 @@
+{
+  "standard.enable": true,
+  "standard.options": {
+      "globals": ["qx", "flat"]
+    }
+}

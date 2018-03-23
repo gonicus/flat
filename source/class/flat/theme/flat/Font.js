@@ -8,11 +8,9 @@
 
 ************************************************************************ */
 
-qx.Theme.define("flat.theme.Appearance",
-{
-  extend : qx.theme.indigo.Appearance,
+qx.Theme.define('flat.theme.flat.Font', {
+  extend: qx.theme.indigo.Font,
 
-  appearances :
-  {
+  fonts: {
   }
-});
+})
