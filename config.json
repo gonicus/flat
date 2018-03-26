@@ -33,7 +33,8 @@
     "translation",
     "validate-config",
     "validate-manifest",
-    "watch"
+    "watch",
+    "make-font-map"
   ],
 
   "default-job" : "source-hybrid",
@@ -42,48 +43,37 @@
   {
     "APPLICATION"  : "flat",
     "QOOXDOO_PATH" : "../qooxdoo",
-    "QXTHEME"      : "flat.theme.Theme",
+    "QXTHEME"      : "flat.theme.Flat",
     "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*"],
     "LOCALES"      : [ "en" ],
     "CACHE"        : "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
     "ROOT"         : "."
   },
 
-  // You only need to edit the remainder of this file, if you want to customize
-  // specific jobs, or add own job definitions.
-
   "jobs" :
   {
-    // Uncomment the following entry to add a contrib or library to your
-    // project; make sure to adapt the path to the Manifest.json; if you are
-    // using a contrib: library, it will be downloaded into the path specified
-    // by the 'cache/downloads' config key
-    /*
-    "libraries" :
+    "make-font-map" :
     {
-      "library" :
-      [
-        {
-          "manifest" : "contrib://SkeletonApplication/trunk/Manifest.json"
-        }
-      ]
-    }
-    */
+      "desc" : "Build a font mapping from glyphname to unicode id",
 
-    // If you want to tweak a job setting, see the following sample where
-    // the "format" feature of the "build-script" job is overridden.
-    // To see a list of available jobs, invoke 'generate.py x'.
-    /*
-    ,"build-script" :
-    {
-      "compile-options" :
+      "let" :
       {
-        "code" :
+        "RESPATH" : "./source/resource",
+        "QXRESPATH" : "${QOOXDOO_PATH}/framework/source/resource"
+      },
+
+      "font-map" :
+      {
+        "fonts" :
         {
-          "format" : false
+          "${RESPATH}/flat/font/LigatureSymbols-2.11.ttf" :
+          {
+            "prefix": [ "${RESPATH}" ],
+            "alias" : "Ligature",
+            "size" : 40
+          }
         }
       }
     }
-    */
   }
 }

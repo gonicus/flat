@@ -12,21 +12,6 @@ qx.Theme.define('flat.theme.flat.Color', {
   extend: qx.theme.indigo.Color,
 
   colors: {
-    'header-bar': 'black',
-    'header-text': 'white',
-    'error-text': '#8A0808',
-    'disabled-text': '#CCCCCC',
-    'hovered': '#DDD',
-    'icon-color': '#666666',
-    'border-separator': 'mediumgray-light',
-    'highlight': '#3D72C9', // bright blue
-
-    'background-selected': 'aqua-dark',
-    'table-focus-indicator': 'transparent',
-    'table-row-background-selected': 'aqua-dark',
-    'table-row-background-focused-selected': 'aqua-dark',
-
-    // - FLAT - do not insert anything behind this marker -----------------------------------------------------
     'white': '#FFF',
     'black': '#000',
 
