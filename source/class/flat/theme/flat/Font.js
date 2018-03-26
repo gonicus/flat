@@ -16,12 +16,12 @@ qx.Theme.define('flat.theme.flat.Font', {
   fonts: {
     'default': {
       size: 14,
-      family: ['Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      family: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       sources: [
         {
-          family: 'Open Sans',
+          family: 'Roboto',
           source: [
-            'flat/font/OpenSans-Regular.ttf'
+            'flat/font/Roboto-Regular.ttf'
           ]
         }
       ]
@@ -29,12 +29,12 @@ qx.Theme.define('flat.theme.flat.Font', {
 
     'small': {
       size: 12,
-      family: ['Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      family: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       sources: [
         {
-          family: 'Open Sans',
+          family: 'Roboto',
           source: [
-            'flat/font/OpenSans-Regular.ttf'
+            'flat/font/Roboto-Regular.ttf'
           ]
         }
       ]
@@ -43,12 +43,12 @@ qx.Theme.define('flat.theme.flat.Font', {
     'bold': {
       size: 14,
       bold: true,
-      family: ['Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      family: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       sources: [
         {
-          family: 'Open Sans',
+          family: 'Roboto',
           source: [
-            'flat/font/OpenSans-Bold.ttf'
+            'flat/font/Roboto-Bold.ttf'
           ]
         }
       ]
