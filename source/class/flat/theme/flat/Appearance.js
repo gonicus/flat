@@ -438,7 +438,7 @@ qx.Theme.define('flat.theme.flat.Appearance', {
           decorator = 'checkbox'
         }
 
-        decorator += states.checked ? '-checked' : ''
+        decorator += states.checked || states.undetermined ? '-checked' : ''
         if (!states.disabled) {
           decorator += states.invalid && !states.disabled ? '-invalid' : ''
         }
