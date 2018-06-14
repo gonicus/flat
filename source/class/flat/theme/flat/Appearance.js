@@ -817,11 +817,11 @@ qx.Theme.define('flat.theme.flat.Appearance', {
 
       style: function (states) {
         return {
-          icon : '@Ligature/calendar/20',
+          icon : '@Ligature/calendar/16',
           padding : [0, 0, 0, 3],
           backgroundColor : undefined,
           decorator : undefined,
-          width: 23
+          width: 19
         };
       }
     },
