@@ -811,6 +811,21 @@ qx.Theme.define('flat.theme.flat.Appearance', {
       }
     },
 
+    'datefield/button': {
+      alias: 'combobox/button',
+      include: 'combobox/button',
+
+      style: function (states) {
+        return {
+          icon : '@Ligature/calendar/20',
+          padding : [0, 0, 0, 3],
+          backgroundColor : undefined,
+          decorator : undefined,
+          width: 23
+        };
+      }
+    },
+
     'datechooser': {
       style: function () {
         return {
@@ -839,13 +854,13 @@ qx.Theme.define('flat.theme.flat.Appearance', {
         }
 
         if (states.lastYear) {
-          result.icon = qx.theme.simple.Image.URLS['arrow-rewind']
+          result.icon = '@Ligature/undo/20'
         } else if (states.lastMonth) {
-          result.icon = qx.theme.simple.Image.URLS['arrow-left']
+          result.icon = '@Ligature/back/20'
         } else if (states.nextYear) {
-          result.icon = qx.theme.simple.Image.URLS['arrow-forward']
+          result.icon = '@Ligature/forward/20'
         } else if (states.nextMonth) {
-          result.icon = qx.theme.simple.Image.URLS['arrow-right']
+          result.icon = '@Ligature/next/20'
         }
 
         return result
