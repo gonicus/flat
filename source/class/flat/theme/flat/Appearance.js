@@ -492,6 +492,16 @@ qx.Theme.define('flat.theme.flat.Appearance', {
       }
     },
 
+    'selectbox/arrow': {
+      include: 'image',
+
+      style: function (states) {
+        return {
+          source: '@Ligature/dropdown/10'
+        };
+      }
+    },
+
     'tabview-page': {
       alias: 'widget',
       include: 'widget',
