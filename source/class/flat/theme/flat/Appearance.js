@@ -413,14 +413,15 @@ qx.Theme.define('flat.theme.flat.Appearance', {
       alias: 'atom',
 
       style: function (states) {
-        var icon = '@Ligature/check'
+        var icon = '@Ligature/check/16'
         if (states.undetermined) {
-          icon = '@Ligature/minus'
+          icon = '@Ligature/minus/16'
         }
 
         return {
           icon: icon,
           minWidth: 20,
+          minHeight: 20,
           gap: 8
         }
       }
@@ -447,6 +448,8 @@ qx.Theme.define('flat.theme.flat.Appearance', {
           textColor: 'white',
           decorator: decorator,
           width: 16,
+          allowGrowX: false,
+          allowGrowY: false,
           scale: true
         }
       }
