@@ -1,15 +1,16 @@
 {
-  "info" : 
+  "$schema": "https://qooxdoo.org/schema/Manifest-1-0-0.json",
+  "info" :
   {
     "name" : "flat",
 
     "summary" : "Flat UI theme",
     "description" : "A standard theme for qooxdoo based on flat ui.",
-    
+
     "homepage" : "http://gonicus.de/",
 
     "license" : "MIT",
-    "authors" : 
+    "authors" :
     [
       {
         "name" : "Cajus Pollmeier",
@@ -24,15 +25,25 @@
     "version" : "master",
     "qooxdoo-versions": ["5.0.2"]
   },
-  
-  "provides" : 
+
+  "provides" :
   {
     "namespace"   : "flat",
     "encoding"    : "utf-8",
     "class"       : "source/class",
     "resource"    : "source/resource",
     "translation" : "source/translation",
-    "type"        : "library"
+    "webfonts": [
+      {
+        "name": "Ligature",
+        "defaultSize": 40,
+        "mapping": "flat/font/LigatureSymbols-2.11.map",
+        "resources": [
+          "flat/font/LigatureSymbols-2.11.eot",
+          "flat/font/LigatureSymbols-2.11.woff",
+          "flat/font/LigatureSymbols-2.11.ttf"
+        ]
+      }
+    ]
   }
 }
-
